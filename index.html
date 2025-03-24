@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="app_dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/vars.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <!-- title -->
+    <title>Open Library - knowledge is the value of life</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#!" class="logo">Open Library</a>
+
+          <div class="menu">
+            <nav class="nav">
+              <a href="#!" class="nav__link">Lectures</a>
+              <a href="#!" class="nav__link">Donate</a>
+            </nav>
+
+            <div class="toolbar">
+              <div class="toolbar-theme">
+                <button class="toolbar-theme__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="21"
+                    viewBox="0 0 22 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.6803 1.60638L12.0703 2.39879L12.6803 1.60638ZM11.2967 17.9169L10.8603 17.0171L11.2967 17.9169ZM11.1468 19.82L10.9266 20.7954L11.1468 19.82ZM9.57814 19.1226L8.58473 19.2372L9.57814 19.1226ZM10.8603 17.0171C13.4208 15.775 15.2941 12.8399 15.2941 9.33261H17.2941C17.2941 13.5291 15.0497 17.2077 11.7332 18.8166L10.8603 17.0171ZM15.2941 9.33261C15.2941 6.41227 13.9919 3.87805 12.0703 2.39879L13.2903 0.813975C15.7307 2.69259 17.2941 5.82639 17.2941 9.33261H15.2941ZM20 10.6667C20 5.943 16.6467 2.33333 12.7647 2.33333V0.333334C17.9792 0.333334 22 5.08102 22 10.6667H20ZM12.7647 19C16.6467 19 20 15.3903 20 10.6667H22C22 16.2523 17.9792 21 12.7647 21V19ZM11.3671 18.8445C11.8187 18.9465 12.2859 19 12.7647 19V21C12.1361 21 11.5212 20.9296 10.9266 20.7954L11.3671 18.8445ZM12.0703 2.39879C11.6528 2.07743 11.5421 1.56334 11.6684 1.14667C11.798 0.719246 12.2005 0.333334 12.7647 0.333334V2.33333C13.1845 2.33333 13.4875 2.03989 13.5824 1.72696C13.674 1.42479 13.5933 1.04722 13.2903 0.813975L12.0703 2.39879ZM11.7332 18.8166C11.1199 19.1141 10.7491 19.2961 10.5253 19.4407C10.4143 19.5126 10.4149 19.5289 10.4477 19.4875C10.4991 19.4228 10.5994 19.2491 10.5716 19.0081L8.58473 19.2372C8.53661 18.82 8.69492 18.4786 8.8815 18.2437C9.04953 18.0321 9.2624 17.8757 9.43946 17.7612C9.79198 17.5333 10.3007 17.2886 10.8603 17.0171L11.7332 18.8166ZM10.9266 20.7954C10.4526 20.6884 9.97929 20.5844 9.63164 20.4485C9.30674 20.3215 8.67333 20.0055 8.58473 19.2372L10.5716 19.0081C10.5515 18.834 10.463 18.6938 10.3747 18.6124C10.3124 18.555 10.2804 18.5548 10.3598 18.5858C10.4317 18.6139 10.5449 18.6489 10.7236 18.6942C10.8998 18.7389 11.1084 18.7861 11.3671 18.8445L10.9266 20.7954Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M3.0891 4.54412L3.01449 4.5723C2.37264 4.81478 2.05172 4.93602 1.96485 5.11535C1.89815 5.25302 1.89815 5.41365 1.96485 5.55132C2.05172 5.73065 2.37264 5.85189 3.01449 6.09436L3.0891 6.12255C3.58693 6.31062 3.83584 6.40465 4.04341 6.55088C4.27229 6.71214 4.46476 6.91965 4.60838 7.16C4.73861 7.37795 4.81369 7.63322 4.96385 8.14377C5.17322 8.85563 5.27791 9.21156 5.43099 9.31232C5.59781 9.42211 5.81396 9.42211 5.98077 9.31232C6.13385 9.21156 6.23854 8.85563 6.44791 8.14377C6.59807 7.63322 6.67315 7.37795 6.80339 7.16C6.947 6.91965 7.13948 6.71214 7.36836 6.55088C7.57592 6.40465 7.82484 6.31062 8.32267 6.12255L8.39728 6.09436C9.03912 5.85189 9.36005 5.73065 9.44692 5.55132C9.51361 5.41365 9.51361 5.25302 9.44692 5.11535C9.36005 4.93602 9.03912 4.81478 8.39728 4.5723L8.32267 4.54412C7.82484 4.35605 7.57592 4.26201 7.36836 4.11578C7.13948 3.95453 6.947 3.74702 6.80339 3.50667C6.67315 3.28872 6.59807 3.03345 6.44791 2.5229L6.44791 2.5229C6.23854 1.81104 6.13385 1.4551 5.98077 1.35435C5.81396 1.24456 5.59781 1.24456 5.43099 1.35435C5.27791 1.4551 5.17322 1.81104 4.96385 2.5229C4.81369 3.03344 4.73861 3.28872 4.60838 3.50667C4.46476 3.74702 4.27229 3.95453 4.04341 4.11578C3.83584 4.26201 3.58693 4.35605 3.0891 4.54412Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="toolbar-translator">
+                <button class="toolbar-translator__button">
+                  <div class="toolbar-ico">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="arrow">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+                </button>
+
+                <div class="translator-menu">
+                  <div class="translator-menu__wrapper">
+                    <button class="translator-menu__item">English</button>
+                    <button class="translator-menu__item">Русский</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="menu__button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <Intro -->
+    <section class="intro">
+      <div id="intro-bg" class="intro-bg"></div>
+      <div class="intro-content">
+        <h1 class="intro-content__title">Knowledge is a privilege</h1>
+
+        <p class="intro-content__description">
+          and we strive to make it accessible to everyone. Learn more about us
+          or ask our AI designed to give people knowledge
+        </p>
+
+        <form class="ai">
+          <input
+            type="text"
+            placeholder="Enter your query..."
+            class="ai__input"
+          />
+          <button type="submit" class="ai__button">
+            <div class="ai_arrow-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+                class="!size-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Main -->
+    <main class="main"></main>
+    <!-- Footer -->
+    <footer class="footer"></footer>
+
+    <script src="./src/js/app/script.js"></script>
+    <script src="./src/js/three.min.js"></script>
+    <script src="./src/js/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#intro-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x8a48ff,
+        color2: 0x0,
+        backgroundColor: 0x050505,
+        showLines: false,
+      });
+    </script>
+  </body>
+</html>

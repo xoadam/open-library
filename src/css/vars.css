@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  --main-family: "Montserrat", sans-serif;
+
+  --accent-color: #8a48ff;
+}
+
+.app_dark {
+  --main-color: #050505;
+  --standing-dark-color: #141414;
+  --standing-main-color: #1a1a1a;
+  --border-color: #181818;
+
+  --reverse-white: #fff;
+}

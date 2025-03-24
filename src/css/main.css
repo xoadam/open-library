@@ -1,0 +1,294 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--main-family);
+  color: var(--reverse-white);
+
+  background-color: var(--main-color);
+  height: 1000vh;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  padding: 16px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--reverse-white);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--reverse-white);
+
+  transition: 0.1s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.toolbar-theme__button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--reverse-white);
+
+  border-radius: 4px;
+
+  transition: 0.1s;
+
+  &:hover {
+    background-color: var(--standing-main-color);
+  }
+}
+
+.toolbar-translator {
+  position: relative;
+
+  &:hover .toolbar-translator__button {
+    opacity: 0.8;
+  }
+
+  &:hover .arrow {
+    transform: translateY(2px);
+  }
+
+  &:hover .translator-menu {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
+  }
+}
+
+.toolbar-translator__button {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+
+  transition: 0.1s;
+}
+
+.toolbar-ico {
+  width: 20px;
+  height: 20px;
+
+  color: var(--reverse-white);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+
+  & svg {
+    width: 16px;
+
+    color: var(--reverse-white);
+
+    transform: rotate(90deg);
+  }
+}
+
+.translator-menu {
+  padding: 18px 5px 5px 5px;
+
+  position: absolute;
+  top: 100%;
+  right: -40%;
+
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.translator-menu__wrapper {
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  border: 1px solid #212121;
+  border-radius: 5px;
+
+  background-color: var(--standing-dark-color);
+}
+
+.translator-menu__item {
+  width: 100%;
+  padding: 10px 20px 10px 6px;
+
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 5px;
+
+  transition: 0.1s;
+
+  &:hover {
+    background-color: #272727;
+  }
+}
+
+.menu__button {
+  padding: 10px 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  border: 1px solid #2f2f2f;
+  border-radius: 30px;
+
+  background-color: #0000007b;
+
+  transition: 0.1s;
+
+  &:hover {
+    border: 1px solid #4d4d4d;
+
+    background-color: #121212;
+  }
+}
+
+/* Intro */
+
+.intro {
+  position: relative;
+}
+
+.intro-bg {
+  height: 100vh;
+}
+
+.intro-content {
+  max-width: 600px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  text-align: center;
+
+  transform: translate(-50%, -50%);
+}
+
+.intro-content__title {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.intro-content__description {
+  font-size: 17px;
+  font-weight: 500;
+  color: #d6d6d6;
+  line-height: 1.7em;
+}
+
+.ai {
+  min-width: 450px;
+  max-width: 450px;
+  padding: 0 10px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #43403d;
+  border-radius: 40px;
+
+  background-color: #0a0a0acb;
+}
+
+.ai__input {
+  padding: 24px 20px;
+
+  font-weight: 500;
+
+  flex: 1;
+
+  &::placeholder {
+    color: #7e7e7e;
+
+    font-weight: 500;
+  }
+}
+
+.ai__button {
+  padding: 14px;
+
+  border-radius: 50%;
+
+  background-color: #858585;
+}
+
+.ai_arrow-icon {
+  width: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #0a0a0a;
+}
